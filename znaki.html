@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakub Figiel 4e</title>
+    <!-- importowanie czcionek -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<!-- stylowanie body, na wczytaniu strony wykonuje funkcję onload()-->
+<body style="background-color: #16213e;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+            "onload="onload()">
+
+    <!-- odpowiednio nazwane pola-->
+    Name<input type="text" name="imię" id="imie" maxlength="30" onkeyup="znaki()"><div id='im'></div>
+    Surname<input type="text" name="nazwisko" id="nazwisko" maxlength="50" onkeyup="znaki()"><div id='na'></div>
+    Description<input type="text" name="opis" id="opis" maxlength="250" onkeyup="znaki()"><div id ='op'></div>
+    <!-- połączenie skryptu js-->
+    <script src="znaki.js"></script>
+</body>
+</html>
